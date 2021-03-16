@@ -2,17 +2,17 @@ BIN=Main
 OBJ_DIR = objs
 MKDIR = mkdir -p
 
-EIGEN_DIR = ../../eigen
-BULLET_INC_DIR = /home/wd/miniconda3/envs/deep_mimic3/include/bullet
+EIGEN_DIR = /usr/include/eigen3
+BULLET_INC_DIR = /opt/conda/envs/deep_mimic3/include/bullet
 
-PYTHON_INC = /home/wd/miniconda3/envs/deep_mimic3/include/python3.7m
+PYTHON_INC = /opt/conda/include/python3.7m
 PYTHON_LIB = /usr/lib/ -lpython3.7m
 
 INC = -I./ \
 	-I$(EIGEN_DIR) \
 	-I$(BULLET_INC_DIR)
 
-LIBS = -lGLEW -lGL -lGLU -lglut -lBulletDynamics -lBulletCollision -lLinearMath -lm -lstdc++ -L/home/wd/miniconda3/envs/deep_mimic3/lib
+LIBS = -lGLEW -lGL -lGLU -lglut -lBulletDynamics -lBulletCollision -lLinearMath -lm -lstdc++ -L/opt/conda/lib
 
 CC = clang++
 CFLAGS = -std=c++11 -O3 -Wall -fPIC 
