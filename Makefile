@@ -3,7 +3,7 @@ OBJ_DIR = objs
 MKDIR = mkdir -p
 
 EIGEN_DIR = /usr/include/eigen3
-BULLET_INC_DIR = /opt/conda/envs/deep_mimic3/include/bullet
+BULLET_INC_DIR = /opt/conda/include/bullet
 
 PYTHON_INC = /opt/conda/include/python3.7m
 PYTHON_LIB = /usr/lib/ -lpython3.7m
